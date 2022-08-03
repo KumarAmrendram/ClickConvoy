@@ -1,0 +1,96 @@
+/*** FONTS ***/
+@import url(https://fonts.googleapis.com/css?family=Montserrat:900|Raleway:400,400i,700,700i);
+
+/*** EXTEND ***/
+/* box-shadow */
+/*** STYLE ***/
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: block;
+  margin: 0 auto;
+  max-width: 40rem;
+  padding: 1rem;
+}
+
+ol.gradient-list {
+  counter-reset: gradient-counter;
+  list-style: none;
+  margin: 1.75rem 0;
+  padding-left: 1rem;
+}
+ol li {
+  background: white;
+  border-radius: 0 0.5rem 0.5rem 0.5rem;
+  @extend %boxshadow;
+  counter-increment: gradient-counter;
+  margin-top: 1rem;
+  min-height: 3rem;
+  padding: 1rem 1rem 1rem 3rem;
+  position: relative;
+}
+ol li::before,
+ol li::after {
+  background: linear-gradient(135deg, #83e4e2 0%, #0073cf 100%);
+  border-radius: 1rem 1rem 0 1rem;
+  content: "";
+  height: 3rem;
+  left: -1rem;
+  overflow: hidden;
+  position: absolute;
+  top: -1rem;
+  width: 3rem;
+}
+ol li::before {
+  align-items: flex-end;
+  @extend %boxshadow;
+  content: counter(gradient-counter);
+  color: #1d1f20;
+  display: flex;
+  font: 900 1.5em/1 "Montserrat";
+  justify-content: flex-end;
+  padding: 0.125em 0.25em;
+  z-index: 1;
+}
+@for $i from 1 through 5 {
+  &:nth-child(10n + #{$i}):before {
+    background: linear-gradient(
+      135deg,
+      rgba(#0073cf, $i * 0.2) 0%,
+      rgba(#fddc32, $i * 0.2) 100%
+    );
+  }
+}
+@for $i from 6 through 10 {
+  &:nth-child(10n + #{$i}):before {
+    background: linear-gradient(
+      135deg,
+      rgba(#0073cf, 1 - (($i - 5) * 0.2)) 0%,
+      rgba(#fddc32, 1 - (($i - 5) * 0.2)) 100%
+    );
+  }
+}
+
+.section .container .list-container {
+  margin-left: 15%;
+  justify-content: center;
+  width: 70%;
+}
+
+@media (max-width: 700px) {
+    .section .container .list-container {
+        margin: 0 ;
+        justify-content: center;
+        width: 100%;
+      }
+}
