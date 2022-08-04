@@ -23,63 +23,21 @@ main {
   padding: 1rem;
 }
 
-ol.gradient-list {
-  counter-reset: gradient-counter;
+l.gradient-list {
   list-style: none;
   margin: 1.75rem 0;
   padding-left: 1rem;
 }
-ol li {
-  background: white;
+ul li {
+  background: linear-gradient(135deg, #fff 0%, whitesmoke 100%);
   border-radius: 0 0.5rem 0.5rem 0.5rem;
-  @extend %boxshadow;
-  counter-increment: gradient-counter;
+  font-weight: 500;
   margin-top: 1rem;
   min-height: 3rem;
-  padding: 1rem 1rem 1rem 3rem;
+  padding: 0.2rem 0.2rem 0.2rem 2rem;
   position: relative;
 }
-ol li::before,
-ol li::after {
-  background: linear-gradient(135deg, #83e4e2 0%, #0073cf 100%);
-  border-radius: 1rem 1rem 0 1rem;
-  content: "";
-  height: 3rem;
-  left: -1rem;
-  overflow: hidden;
-  position: absolute;
-  top: -1rem;
-  width: 3rem;
-}
-ol li::before {
-  align-items: flex-end;
-  @extend %boxshadow;
-  content: counter(gradient-counter);
-  color: #1d1f20;
-  display: flex;
-  font: 900 1.5em/1 "Montserrat";
-  justify-content: flex-end;
-  padding: 0.125em 0.25em;
-  z-index: 1;
-}
-@for $i from 1 through 5 {
-  &:nth-child(10n + #{$i}):before {
-    background: linear-gradient(
-      135deg,
-      rgba(#0073cf, $i * 0.2) 0%,
-      rgba(#fddc32, $i * 0.2) 100%
-    );
-  }
-}
-@for $i from 6 through 10 {
-  &:nth-child(10n + #{$i}):before {
-    background: linear-gradient(
-      135deg,
-      rgba(#0073cf, 1 - (($i - 5) * 0.2)) 0%,
-      rgba(#fddc32, 1 - (($i - 5) * 0.2)) 100%
-    );
-  }
-}
+
 
 .section .container .list-container {
   margin-left: 15%;
@@ -91,6 +49,49 @@ ol li::before {
     .section .container .list-container {
         margin: 0 ;
         justify-content: center;
-        width: 100%;
+        width: 90%;
       }
+}
+
+@media (max-width: 450px) {
+  ul li {
+    background: none;
+    border-radius: 0 0.5rem 0.5rem 0.5rem;
+    font-weight: 700;
+    margin-top: 1rem;
+    min-height: 2.5rem;
+    padding: 0.2;
+    position: relative;
+    color: #fff;
+
+  }
+
+  ul li:before {
+    content: "";
+    position: absolute;
+    top: 1.2em;
+    left: 0 !important;
+    margin-top: -.9em;
+    height: 16px !important;
+    width: 16px !important;
+    border-radius: 50%;    
+    /* background-color: #fff; */
+    background: linear-gradient(135deg, #fff 0%, #83e4e2 100%);
+  }
+}
+
+
+
+ul li:before {
+  content: "";
+  position: absolute;
+  top: 1.2em;
+  left: -35px;
+  margin-top: -.9em;
+  /* background: #f69ec4; */
+  height: 34px;
+  width: 34px;
+  border-radius: 50%;
+  /* background: linear-gradient(135deg, #83e4e2 0%, #0073cf 100%); */
+  
 }

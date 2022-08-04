@@ -90,7 +90,7 @@ banner
 }
 
 .partner-support h1 {
-  /* margin-top: 3rem; */
+  margin-top: 2rem;
 }
 ol li {
   margin-top: 2em;
@@ -113,12 +113,12 @@ ol li {
 /* Join us */
 .join-us {
   position: relative;
-  margin-top: 10px;
+  margin-top: 80px;
   height: 100vh;
 }
 
 .join-us .container h1 {
-  margin-bottom: 1em;
+  margin: 1em 0 0.5em;
 
 }
 .join-us .container .logos img {
