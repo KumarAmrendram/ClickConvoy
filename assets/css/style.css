@@ -9,6 +9,7 @@
 @import "../../contact/css/main.css";
 @import "../../contact/css/util.css";
 @import "./background.css";
+@import "./card.css";
 
 * {
   margin: 0;
