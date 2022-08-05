@@ -26,6 +26,7 @@ new fullpage("#fullpage", {
     tl.from('.brand-img-bottom', {y:200, stagger: 0.2, opacity:0, translate:"translateY(100px)"}, "-=1.5")
     tl.from(".client-h1", { x: -100, opacity: 0, delay: 0.5, duraton: 1.5 });
     tl.from('.logos', {x:-200, stagger: 0.2, opacity:0, translate:"translateY(100px)"}, "-=1")
+    tl.from('.box', {y:-200, stagger: 0.2, opacity:0, translate:"translateY(50px)"}, "-=1.5")
   },
   BeforeLeave: (origin, destination, direction) => {
     const section = destination.item;

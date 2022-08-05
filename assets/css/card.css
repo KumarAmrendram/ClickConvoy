@@ -42,6 +42,7 @@ body {
 
 .box p {
   color: var(--grayishBlue);
+  display: inline-block;
 }
 
 .box {
@@ -50,6 +51,7 @@ body {
   padding: 30px;
   margin: 20px;
   background-color: #f8f8f8;
+  text-align: left;
 }
 
 .card-header h1:first-of-type {
