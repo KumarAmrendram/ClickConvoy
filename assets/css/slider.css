@@ -1,3 +1,6 @@
+.navigation{
+  position: absolute;
+}
 .container {
   overflow: hidden;
 }
