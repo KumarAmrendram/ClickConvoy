@@ -8,7 +8,7 @@
 @import "../../contact/animate.css";
 @import "../../contact/css/main.css";
 @import "../../contact/css/util.css";
-/* @import "./background.css"; */
+@import "./background.css";
 
 * {
   margin: 0;
