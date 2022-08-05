@@ -8,6 +8,7 @@
 @import "../../contact/animate.css";
 @import "../../contact/css/main.css";
 @import "../../contact/css/util.css";
+/* @import "./background.css"; */
 
 * {
   margin: 0;
@@ -135,14 +136,17 @@ ol li {
   filter: grayscale(0%)
 }
 
-/* earn */
+/* Earn */
 .earn {
+  margin: 80px 1em;
   height: 100vh;
 }
 
-.contact-container {
-  height: 100vh;
+.earn .container p {
+  font-weight: 600;
+  font-size: 1rem;
 }
+
 
 /* misson */
 .mission {
