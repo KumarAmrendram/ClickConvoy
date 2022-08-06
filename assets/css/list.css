@@ -27,10 +27,11 @@ l.gradient-list {
   margin: 1.75rem 0;
   padding-left: 1rem;
 }
-ul li {
+.list ul li {
   background: linear-gradient(135deg, #fff 0%, whitesmoke 100%);
   border-radius: 0 0.5rem 0.5rem 0.5rem;
   font-weight: 500;
+  font-size: 1.2rem;
   margin-top: 1rem;
   min-height: 3rem;
   padding: 0.2rem 0.2rem 0.2rem 2rem;

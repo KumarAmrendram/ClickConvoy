@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,500;0,600;0,700;1,400;1,500&family=Roboto:wght@100;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,500;0,600;0,700;1,400;1,500&family=Roboto:wght@100;500;700&display=swap");
 @import "./_variables.css";
 @import "./button.css";
 @import "./list.css";
@@ -60,7 +60,6 @@ banner
   font-size: 4rem;
 }
 
-
 .main-banner .container .caption {
   position: relative;
   left: 50%;
@@ -75,6 +74,11 @@ banner
   position: relative;
   margin-top: 2em;
   text-align: left;
+}
+
+.main-banner .row .banner-text h4 {
+  margin-top: 0.5em;
+  letter-spacing: 2px;
 }
 
 .main-banner .container .row button {
@@ -94,7 +98,19 @@ banner
   .main-banner .container .row h1 {
     font-size: 2.5rem;
   }
-  
+}
+
+@media (max-width: 590px) {
+  .main-banner .row .banner-text h4 {
+    font-size: 1.2rem;
+    margin-top: 0.5em;
+    letter-spacing: 2px;
+  }
+}
+
+/* Offerings */
+#brand {
+  max-height: 100vh !important;
 }
 
 /* partner support */
@@ -114,7 +130,6 @@ ol li {
   font: 500 1rem/20px var(--Montserrat);
 }
 
-
 /* partner-support  */
 .partner-support {
   position: relative;
@@ -132,20 +147,19 @@ ol li {
 
 .join-us .container h1 {
   margin: 1em 0 0.5em;
-
 }
 .join-us .container .logos img {
   width: 150px !important;
   height: 70px;
   -webkit-filter: grayscale(100%);
-  filter: grayscale(100%)
+  filter: grayscale(100%);
 }
 
 .join-us .container .logos img:hover {
   width: 150px !important;
   height: 70px;
-  -webkit-filter: grayscale(0); 
-  filter: grayscale(0%)
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0%);
 }
 
 /* Earn */
@@ -159,16 +173,11 @@ ol li {
   font-size: 1rem;
 }
 
-/* Offerings */
-.brand {
-  max-height: 100vh !important;
-}
-
 /* misson */
 .mission {
   margin: 0;
 }
-.mission p  {
+.mission p {
   margin: 2em 0 0;
   color: #fff;
 }
@@ -185,9 +194,10 @@ ol li {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 99;}
+  z-index: 99;
+}
 
-.mission .row .img-top:hover{
+.mission .row .img-top:hover {
   display: inline;
 }
 
@@ -195,7 +205,6 @@ ol li {
   -webkit-filter: sepia(1);
   filter: sepia(1);
 }
-
 
 @media (max-width: 500px) {
   .mission .row img {
@@ -215,8 +224,8 @@ ol li {
   width: 50%;
 }
 
-.site-main .site-banner .site-title{
-      flex-direction:column-reverse;
+.site-main .site-banner .site-title {
+  flex-direction: column-reverse;
 }
 .site-main .site-banner .site-title h3 {
   padding-top: 25%;
@@ -233,24 +242,23 @@ ol li {
   margin-left: 5%;
   transform: translate(-10px);
 }
-.site-main .site-banner .site-title h1{
+.site-main .site-banner .site-title h1 {
   font-size: 3rem;
 }
-.site-main .site-banner .site-title h4{
+.site-main .site-banner .site-title h4 {
   font-size: 1.5rem;
 }
 
 .site-main .site-banner .banner-image > img {
   padding: 7rem 0;
   width: 20rem;
-
 }
 
 /* <!--  end banner area --> */
 
 /* contact */
 .section .container .row p a:hover {
-  color:black;
+  color: black;
 }
 
 /* social section */
@@ -260,10 +268,10 @@ ol li {
   font-size: 25px;
 }
 
-.section .social .facebook{ 
+.section .social .facebook {
   bottom: 10% !important;
 }
 
 .section .social .twitter {
- top: 10%;
+  top: 10%;
 }
