@@ -1,14 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
-:root {
-  --header-height: 3rem;
-  --nav-width: 68px;
-  --first-color: #C4DDF2;
-  --first-color-light: #0073cf;
-  --white-color: #C4DDF2;
-  --body-font: "Nunito", sans-serif;
-  --normal-font-size: 1rem;
-  --z-fixed: 100;
-}
 
 *,
 ::before,
@@ -17,7 +7,7 @@
 }
 body {
   position: relative;
-  margin: var(--header-height) 0 0 0;
+  margin: 3em 0 0 0;
   padding: 0 1rem;
   transition: 0.5s;
 }
@@ -26,7 +16,7 @@ a {
 }
 .header {
   width: 100%;
-  height: var(--header-height);
+  height: 3em;
   position: fixed;
   top: 0;
   left: 0;
@@ -35,7 +25,7 @@ a {
   justify-content: space-between;
   padding: 0 1rem;
   background-color: transparent;
-  z-index: var(--z-fixed);
+  z-index: 100;
   transition: 0.5s;
 }
 .header_toggle {
@@ -58,12 +48,12 @@ a {
   position: fixed;
   top: 0;
   left: -30%;
-  width: var(--nav-width);
+  width: 68px;
   height: 100vh;
   background-color: transparent;
   padding: 0.5rem 1rem 0 0;
   transition: 0.5s;
-  z-index: var(--z-fixed);
+  z-index: 100;
 }
 .nav {
   height: 100%;
@@ -96,6 +86,10 @@ a {
   margin-bottom: 1.5rem;
   transition: 0.3s;
 }
+.nav_name {
+  color: black;
+  font-weight: 500;
+}
 .nav_link:hover {
   color: black;
 }
@@ -106,7 +100,7 @@ a {
   left: 0;
 }
 .body-pd {
-  padding-left: calc(var(--nav-width) + 1rem);
+  padding-left: calc(68px + 1rem);
 }
 .active {
   color: black;
@@ -124,12 +118,12 @@ a {
 }
 @media screen and (min-width: 768px) {
   body {
-    margin: calc(var(--header-height) + 1rem) 0 0 0;
-    padding-left: calc(var(--nav-width) + 2rem);
+    margin: calc(3em + 1rem) 0 0 0;
+    padding-left: calc(68px + 2rem);
   }
   .header {
-    height: calc(var(--header-height) + 1rem);
-    padding: 0 2rem 0 calc(var(--nav-width) + 2rem);
+    height: calc(3em + 1rem);
+    padding: 0 2rem 0 calc(68px + 2rem);
   }
   .header_img {
     width: 40px;
@@ -143,10 +137,10 @@ a {
     padding: 1rem 1rem 0 0;
   }
   .show {
-    width: calc(var(--nav-width) + 156px);
+    width: calc(68px + 156px);
     background-color: #C4DDF2;
   }
   .body-pd {
-    padding-left: calc(var(--nav-width) + 188px);
+    padding-left: calc(68px + 188px);
   }
 }
