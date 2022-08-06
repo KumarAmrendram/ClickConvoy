@@ -35,11 +35,17 @@
   vertical-align: top !important;
 }
 
-.float-fb {
-  top: 160px;
+.fl-fl a i {
+  margin-left: -6px;
 }
 
-.float-tw {
+.float-ln {
+  top: 160px;
+  font-size: 0.62em;
+  letter-spacing: 2px;
+}
+
+.float-fb {
   top: 215px;
 }
 
@@ -47,9 +53,8 @@
   top: 270px;
 }
 
-.float-ln {
+.float-tl {
   top: 325px;
-  font-size: 0.62em;
-  letter-spacing: 2px;
+
 }
 /* Floating Social Media Bar Style Ends Here */
