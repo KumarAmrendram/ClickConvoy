@@ -1,53 +1,55 @@
-a {
-  color: #fff;
-  text-decoration: none;
+/* Floating Social Media Bar Style Starts Here */
+
+.fl-fl {
+  background: #fff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 4px;
+  width: 190px;
+  position: fixed;
+  right: -160px;
+  z-index: 1000;
+  font: normal normal 10px Arial;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+.fa-brands {
+  font-size: 20px;
+  color: #0073cf;
+  padding: 10px 0;
+  width: 40px;
+  margin-left: 8px;
+}
+.fl-fl:hover {
+  right: 0;
 }
 
-.social {
-  position: fixed;
-  top: 20px;
-  right: -270px;
-  font-family: "Raleway", sans-serif;
+.fl-fl a {
+  color: #0073cf !important;
+  text-decoration: none;
+  text-align: center;
+  line-height: 43px !important;
+  vertical-align: top !important;
 }
-.social ul {
-  padding: 0px;
+
+.float-fb {
+  top: 160px;
 }
-.social ul li {
-  display: block;
-  margin: 5px;
-  background: rgba(0, 0, 0, 0.36);
-  width: 300px;
-  text-align: left;
-  padding: 10px;
-  border-radius: 30px 0 0 30px;
-  transition: all 1s;
-  cursor: pointer;
+
+.float-tw {
+  top: 215px;
 }
-.social ul li a {
-  margin-left: 25px;
+
+.float-ig {
+  top: 270px;
 }
-.social ul li:hover {
-  transform: translate(-110px, 0);
-  background: rgba(255, 255, 255, 0.4);
+
+.float-ln {
+  top: 325px;
+  font-size: 0.62em;
+  letter-spacing: 2px;
 }
-.social ul li:hover a {
-  color: #000;
-}
-.social ul li:hover i {
-  color: #fff;
-  background: rgba(0, 0, 0, 0.36);
-  transform: rotate(360deg);
-  transition: all 1s;
-}
-.social ul li i {
-  margin-right: 10px;
-  color: #000;
-  background: #fff;
-  padding: 10px;
-  border-radius: 50%;
-  width: 20px;
-  height: 20px;
-  font-size: 20px;
-  background: #ffffff;
-  transform: rotate(0deg);
-}
+/* Floating Social Media Bar Style Ends Here */

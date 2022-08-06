@@ -4,7 +4,7 @@
 @import "./list.css";
 @import "./fullpage.css";
 @import "./sidebar.css";
-/* @import "./slider.css"; */
+@import "./slider.css";
 @import "../../contact/animate.css";
 @import "../../contact/css/main.css";
 @import "../../contact/css/util.css";
@@ -149,6 +149,10 @@ ol li {
   font-size: 1rem;
 }
 
+/* Offerings */
+.brand {
+  max-height: 100vh !important;
+}
 
 /* misson */
 .mission {

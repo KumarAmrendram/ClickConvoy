@@ -13,6 +13,7 @@ body {
 }
 a {
   text-decoration: none;
+  color: #fff;
 }
 .header {
   width: 100%;
