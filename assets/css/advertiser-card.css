@@ -1,0 +1,102 @@
+.advertiser-container {
+  width: 100%;
+  left: 100px !important;
+}
+
+
+.box {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.publisher-box {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.our-services {
+  margin-top: 30px;
+  padding: 0 5px;
+  min-height: 198px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #fff;
+  transition: all 0.4s ease-in-out;
+  box-shadow: 0 0 25px 0 rgba(20, 27, 202, 0.17);
+  background-image: linear-gradient(-45deg, #fbffff 0%, #fbffff 100%);
+}
+.our-services .icon {
+  margin-bottom: -21px;
+  transform: translateY(-50%);
+  text-align: center;
+  font-size: 4rem;
+  color: black;
+}
+
+.our-services h4 {
+  font-weight: 600;
+  padding-bottom: 5px;
+}
+
+.our-services p {
+  padding-bottom: 2em;
+}
+
+.our-services .icon .fa-earth-asia {
+  color: #210c59;
+}
+
+.our-services .icon .fa-arrow-pointer {
+  color: #f55b2a;
+}
+.our-services .icon .fa-earth-asia {
+  color: #210c59;
+}
+.our-services .icon .fa-arrow-up-right-dots {
+  color: #44a2f6;
+}
+.our-services .icon .fa-laptop {
+  color: #8d40fb;
+}
+.our-services .icon .fa-hands-holding-circle {
+  color: #27b88d;
+}
+.our-services:hover h4,
+.our-services:hover p {
+  color: #fff;
+}
+
+
+.qdt:hover {
+  box-shadow: 0 0 25px 0 rgba(20, 27, 201, 0.05);
+  cursor: pointer;
+  background-image: linear-gradient(-45deg, #fb0054 0%, #f55b2a 100%);
+}
+.global-reach:hover {
+  box-shadow: 0 0 25px 0 rgba(20, 27, 201, 0.05);
+  cursor: pointer;
+  background-image: linear-gradient(-45deg, #34b5bf 0%, #210c59 100%);
+}
+.profits:hover {
+  box-shadow: 0 0 25px 0 rgba(20, 27, 201, 0.05);
+  cursor: pointer;
+  background-image: linear-gradient(-45deg, #3615e7 0%, #44a2f6 100%);
+}
+.backups:hover {
+  box-shadow: 0 0 25px 0 rgba(20, 27, 201, 0.05);
+  cursor: pointer;
+  background-image: linear-gradient(-45deg, #fc6a0e 0%, #fdb642 100%);
+}
+.dam:hover {
+  box-shadow: 0 0 25px 0 rgba(20, 27, 201, 0.05);
+  cursor: pointer;
+  background-image: linear-gradient(-45deg, #8d40fb 0%, #5a57fb 100%);
+}
+.afp:hover {
+  box-shadow: 0 0 25px 0 rgba(20, 27, 201, 0.05);
+  cursor: pointer;
+  background-image: linear-gradient(-45deg, #27b88d 0%, #22dd73 100%);
+}

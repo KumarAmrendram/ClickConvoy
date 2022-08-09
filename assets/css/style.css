@@ -1,8 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,500;0,600;0,700;1,400;1,500&family=Roboto:wght@100;500;700&display=swap");
 @import "./_variables.css";
 @import "./button.css";
-@import "./list.css";
-@import "./fullpage.css";
 @import "./sidebar.css";
 @import "./slider.css";
 @import "../../contact/animate.css";
@@ -11,6 +9,7 @@
 @import "./background.css";
 @import "./card.css";
 @import "./social.css";
+@import "./advertiser-card.css";
 
 * {
   margin: 0;
@@ -108,10 +107,12 @@ banner
   }
 }
 
-/* Offerings */
-#brand {
-  max-height: 100vh !important;
+/* advertiser */
+.advertiser {
+  height: 100%;
+
 }
+
 
 /* partner support */
 .partner-support {

@@ -40,12 +40,12 @@ body {
   }
 }
 
-.box p {
+.brand-box p {
   color: var(--grayishBlue);
   display: inline-block;
 }
 
-.box {
+.brand-box {
   border-radius: 10px;
   box-shadow: 0px 30px 40px -20px var(--grayishBlue);
   padding: 30px;
@@ -58,15 +58,15 @@ body {
   color: black;
 }
 
-.row1-container .box img {
+.row1-container .brand-box img {
   float: right;
 }
-.row2-container .box img {
+.row2-container .brand-box img {
   float: right;
 }
 
 @media (max-width: 450px) {
-  .box {
+  .brand-box {
     height: 200px;
   }
 }
@@ -79,7 +79,7 @@ body {
 
 
 @media (max-width: 950px) and (min-width: 450px) {
-  .box {
+  .brand-box {
     text-align: center;
     height: 180px;
   }
@@ -120,7 +120,7 @@ h2 {
     position: relative;
     top: 150px;
   }
-  .box {
+  .brand-box {
     width: 20%;
   }
   .header p {
