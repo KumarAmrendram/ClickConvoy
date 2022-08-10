@@ -31,14 +31,14 @@
 
 .brand-box p {
   color: #000 !important;
-  display: inline-block;
+  display: inline;
 }
 
-.brand-box {
+.brand-box.adv {
   border-radius: 10px;
   box-shadow: 0px 30px 40px -20px var(--cyan);
-  background: #fff;
   text-align: left;
+  min-height: 220px !important;
 }
 
 .card-header h1:first-of-type {
@@ -46,12 +46,11 @@
 }
 
 
-.row1-container .brand-box:nth-child(1) {
-
+.row1-container .brand-box img {
+  width: 50px;
+  float: right;
 }
-
-.row1-container .adv img {
-  width: 60px;
+.row2-container .brand-box img {
   float: right;
 }
 
@@ -73,8 +72,8 @@
 }
 
 @media (max-width: 450px) {
-  .brand-box {
-    height: 200px;
+  .brand-box.adv {
+    min-height: 200px;
   }
   .row1-container .global-reach img {
     float: right;
@@ -84,6 +83,13 @@
 @media (max-width: 590px) {
   img {
     width: 65px;
+  }
+
+  .brand-box.adv {
+    min-height: 200px;
+  }
+  .row1-container .global-reach img {
+    float: right;
   }
 }
 

@@ -16,7 +16,7 @@
 
 @font-face {
   font-family: 'Montserrat' ;
-  src: url('../fonts/Montserrat-Italic-VariableFont_wght.ttf');
+  src: url('../fonts/Montserrat-VariableFont_wght.ttf');
 }
 
 * {
@@ -182,17 +182,6 @@ ol li {
   font-size: 1.5rem;
 }
 
-/* Earn */
-.earn {
-  margin: 80px 1em;
-  height: 100vh;
-}
-
-.earn .container p {
-  font-weight: 600;
-  font-size: 1rem;
-}
-
 /* misson */
 .mission {
   margin: 0;
@@ -200,6 +189,8 @@ ol li {
 .mission p {
   margin: 2em 0 0;
   color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
 }
 
 .mission .row img {
