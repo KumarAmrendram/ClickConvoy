@@ -5,11 +5,14 @@
   font-weight: bold;
 }
 
+
 .content-button button {
   background-color: black;
   margin: 10px;
   color: #ffffff;
+  border: none;
 }
+
 
 .bn32 {
   border-color: #ffffff;
