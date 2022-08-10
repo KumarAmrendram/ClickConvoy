@@ -29,16 +29,14 @@
   }
 }
 
-.adv-box p {
+.brand-box p {
   color: #000 !important;
   display: inline-block;
 }
 
-.adv-box {
+.brand-box {
   border-radius: 10px;
   box-shadow: 0px 30px 40px -20px var(--cyan);
-  padding: 30px 15px;
-  margin: 2px;
   background: #fff;
   text-align: left;
 }
@@ -48,19 +46,39 @@
 }
 
 
-.row1-container .adv-box:nth-child(1) {
+.row1-container .brand-box:nth-child(1) {
 
 }
 
-.row1-container .adv-box img {
+.row1-container .adv img {
+  width: 60px;
   float: right;
 }
-.row2-container .adv-box img {
-  float: right;
+
+
+.row1-container .global-reach img {
+  float: left;
+}
+
+.row1-container .brand-box i {
+  margin-top: 5px;
+  color: black;
+  font-size: 60px;
+  text-align: left;
+}
+
+.row2-container .brand-box i {
+  margin-top: 5px;
+  color: black;
+  font-size: 60px;
+}
+
+.row2-container .profit img {
+  margin-left: 1000px;
 }
 
 @media (max-width: 450px) {
-  .adv-box {
+  .brand-box {
     height: 200px;
   }
 }
@@ -73,7 +91,7 @@
 
 
 @media (max-width: 950px) and (min-width: 450px) {
-  .adv-box {
+  .brand-box {
     text-align: center;
     height: 180px;
   }
@@ -114,7 +132,7 @@ h2 {
     position: relative;
     top: 150px;
   }
-  .adv-box {
+  .brand-box {
     width: 20%;
   }
   .header p {
