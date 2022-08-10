@@ -160,6 +160,22 @@ ol li {
   filter: grayscale(0%);
 }
 
+
+/* OFFERING area */
+.offer-container {
+  margin-top: 1em;
+}
+
+.offer-container p {
+  color: #fff;
+  font-weight: 500;
+}
+
+.offer-container p:last-child {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
 /* Earn */
 .earn {
   margin: 80px 1em;
