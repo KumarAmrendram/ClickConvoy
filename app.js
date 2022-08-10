@@ -37,10 +37,8 @@ new fullpage("#fullpage", {
       },
     });
     tl.to("h1, button", { x: -100, opacity: 1, delay: 0.2, duraton: 0.5 });
-    tl.to('.partner-li', {y:-200, stagger: 0.2, delay: 0.1, opacity:0}, "-=0.5")
     tl.to('.brand-img-bottom', {y:200, opacity:0, translate:"translateY(100px)"}, "-=1.5")
     tl.to('.brand-img-top', {y:-200, opacity:0, translate:"translateY(100px)"}, "-=1.5")
-    tl.to('.logos', {x:0,delay: 0, opacity:1}, "-=0.1")
 
   },
 }); 
