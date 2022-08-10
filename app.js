@@ -1,7 +1,6 @@
 new fullpage("#fullpage", {
   autoScrolling: true,
   keyboardScrolling: true,
-  loopTop: true,
   loopBottom: true,
 	fixedElements: '.navigation, .social',
 

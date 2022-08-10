@@ -1,4 +1,4 @@
-@import url("//fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,500;0,600;0,700;1,400;1,500&family=Roboto:wght@100;500;700&display=swap");
+/* @import url("//fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,500;0,600;0,700;1,400;1,500&family=Roboto:wght@100;500;700&display=swap"); */
 @import "./_variables.css";
 @import "./button.css";
 @import "./sidebar.css";
@@ -12,6 +12,12 @@
 @import "./advertiser-card.css";
 @import "./pub-card.css";
 @import "./list.css";
+
+
+@font-face {
+  font-family: 'Montserrat' ;
+  src: url('../fonts/Montserrat-Italic-VariableFont_wght.ttf');
+}
 
 * {
   margin: 0;
