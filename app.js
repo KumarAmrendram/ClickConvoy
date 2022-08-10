@@ -23,7 +23,7 @@ new fullpage("#fullpage", {
     tl.from('.brand-box', {x:200, stagger: 0.2, opacity:0, translate:"translateY(5px)"}, "-=0.5")
     tl.from('.brand-img', {x:-200, stagger: 0.2, opacity:0, translate:"translateY(50px)"}, "-=1.5")
     tl.from('.adv-img', {y:-200, stagger: 0.2, opacity:0, translate:"translateX(50px)"}, "-=1.1")
-    tl.from('.pub-box', {y:200, stagger: 0.2, opacity:0, translate:"translateY(5px)"}, "-=2")
+    tl.from('.pub-box, .join-li', {y:200, stagger: 0.2, opacity:0, translate:"translateY(5px)"}, "-=2")
     tl.from('.pub-img', {x:-200, stagger: 0.2, opacity:0, translate:"translateY(5px)"}, "-=2") 
     tl.from(".mission-para",{opacity: 0, delay: 0.5, duraton: 1.5 }, "-=2.5");
   },
