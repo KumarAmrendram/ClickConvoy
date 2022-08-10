@@ -11,16 +11,6 @@
   --weight3: 600;
 }
 
-body {
-  font-size: 15px;
-  font-family: "Poppins", sans-serif;
-  background-color: #0073cf;
-}
-
-.brand {
-  height: 100vh;
-}
-
 .card-header h1 {
   text-align: center;
   margin: 0;

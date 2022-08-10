@@ -1,102 +1,123 @@
-.advertiser-container {
-  width: 100%;
-  left: 100px !important;
+:root {
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+  --varyDarkBlue: hsl(234, 12%, 34%);
+  --grayishBlue: hsl(229, 6%, 66%);
+  --veryLightGray: hsl(0, 0%, 98%);
+  --weight1: 200;
+  --weight2: 400;
+  --weight3: 600;
 }
-
-
-.box {
-  position: relative;
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-
-.publisher-box {
-  position: relative;
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-.our-services {
-  margin-top: 30px;
-  padding: 0 5px;
-  min-height: 198px;
+.card-header h1 {
   text-align: center;
+  top: -10;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+.adv-box p {
+  color: #000 !important;
+  display: inline-block;
+}
+
+.adv-box {
   border-radius: 10px;
-  background-color: #fff;
-  transition: all 0.4s ease-in-out;
-  box-shadow: 0 0 25px 0 rgba(20, 27, 202, 0.17);
-  background-image: linear-gradient(-45deg, #fbffff 0%, #fbffff 100%);
+  box-shadow: 0px 30px 40px -20px var(--cyan);
+  padding: 30px 15px;
+  margin: 2px;
+  background: #fff;
+  text-align: left;
 }
-.our-services .icon {
-  margin-bottom: -21px;
-  transform: translateY(-50%);
-  text-align: center;
-  font-size: 4rem;
+
+.card-header h1:first-of-type {
   color: black;
 }
 
-.our-services h4 {
-  font-weight: 600;
-  padding-bottom: 5px;
+
+.row1-container .adv-box:nth-child(1) {
+
 }
 
-.our-services p {
-  padding-bottom: 2em;
+.row1-container .adv-box img {
+  float: right;
+}
+.row2-container .adv-box img {
+  float: right;
 }
 
-.our-services .icon .fa-earth-asia {
-  color: #210c59;
+@media (max-width: 450px) {
+  .adv-box {
+    height: 200px;
+  }
 }
 
-.our-services .icon .fa-arrow-pointer {
-  color: #f55b2a;
-}
-.our-services .icon .fa-earth-asia {
-  color: #210c59;
-}
-.our-services .icon .fa-arrow-up-right-dots {
-  color: #44a2f6;
-}
-.our-services .icon .fa-laptop {
-  color: #8d40fb;
-}
-.our-services .icon .fa-hands-holding-circle {
-  color: #27b88d;
-}
-.our-services:hover h4,
-.our-services:hover p {
-  color: #fff;
+@media (max-width: 590px) {
+  img {
+    width: 65px;
+  }
 }
 
 
-.qdt:hover {
-  box-shadow: 0 0 25px 0 rgba(20, 27, 201, 0.05);
-  cursor: pointer;
-  background-image: linear-gradient(-45deg, #fb0054 0%, #f55b2a 100%);
+@media (max-width: 950px) and (min-width: 450px) {
+  .adv-box {
+    text-align: center;
+    height: 180px;
+  }
 }
-.global-reach:hover {
-  box-shadow: 0 0 25px 0 rgba(20, 27, 201, 0.05);
-  cursor: pointer;
-  background-image: linear-gradient(-45deg, #34b5bf 0%, #210c59 100%);
+
+.cyan {
+  border-top: 3px solid var(--cyan);
 }
-.profits:hover {
-  box-shadow: 0 0 25px 0 rgba(20, 27, 201, 0.05);
-  cursor: pointer;
-  background-image: linear-gradient(-45deg, #3615e7 0%, #44a2f6 100%);
+.red {
+  border-top: 3px solid var(--red);
 }
-.backups:hover {
-  box-shadow: 0 0 25px 0 rgba(20, 27, 201, 0.05);
-  cursor: pointer;
-  background-image: linear-gradient(-45deg, #fc6a0e 0%, #fdb642 100%);
+.blue {
+  border-top: 3px solid var(--blue);
 }
-.dam:hover {
-  box-shadow: 0 0 25px 0 rgba(20, 27, 201, 0.05);
-  cursor: pointer;
-  background-image: linear-gradient(-45deg, #8d40fb 0%, #5a57fb 100%);
+.orange {
+  border-top: 3px solid var(--orange);
 }
-.afp:hover {
-  box-shadow: 0 0 25px 0 rgba(20, 27, 201, 0.05);
-  cursor: pointer;
-  background-image: linear-gradient(-45deg, #27b88d 0%, #22dd73 100%);
+
+h2 {
+  color: var(--varyDarkBlue);
+  font-weight: var(--weight3);
+  margin-top: 0;
+}
+
+@media (min-width: 950px) {
+  .row1-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .row2-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .box-down {
+    position: relative;
+    top: 150px;
+  }
+  .adv-box {
+    width: 20%;
+  }
+  .header p {
+    width: 30%;
+  }
 }
