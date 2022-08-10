@@ -10,9 +10,10 @@
   --weight2: 400;
   --weight3: 600;
 }
+
 .card-header h1 {
   text-align: center;
-  top: -10;
+  margin: 0;
 }
 
 .attribution {
@@ -29,15 +30,18 @@
   }
 }
 
-.brand-box p {
-  color: #000 !important;
+.pub-box p {
+  color: var(--grayishBlue);
   display: inline-block;
+  color: #000;
 }
 
-.brand-box {
+.pub-box {
   border-radius: 10px;
-  box-shadow: 0px 30px 40px -20px var(--cyan);
-  background: #fff;
+  box-shadow: 0px 30px 40px -20px var(--grayishBlue);
+  padding: 20px;
+  margin: 20px;
+  background-color: #f8f8f8;
   text-align: left;
 }
 
@@ -45,39 +49,17 @@
   color: black;
 }
 
-
-.row1-container .brand-box:nth-child(1) {
-
-}
-
-.row1-container .adv img {
+.row1-container .pub-box img {
   width: 60px;
   float: right;
 }
-
-.row1-container .brand-box i {
-  margin-top: 5px;
-  color: black;
-  font-size: 60px;
-  text-align: left;
-}
-
-.row2-container .brand-box i {
-  margin-top: 5px;
-  color: black;
-  font-size: 60px;
-}
-
-.row1-container .global-reach img {
-  float: left;
+.row2-container .pub-box img {
+  float: right;
 }
 
 @media (max-width: 450px) {
-  .brand-box {
+  .pub-box {
     height: 200px;
-  }
-  .row1-container .global-reach img {
-    float: right;
   }
 }
 
@@ -89,13 +71,9 @@
 
 
 @media (max-width: 950px) and (min-width: 450px) {
-  .brand-box {
+  .pub-box {
     text-align: center;
     height: 180px;
-  }
-
-  .row1-container .global-reach img {
-    float: right;
   }
 }
 
@@ -134,7 +112,7 @@ h2 {
     position: relative;
     top: 150px;
   }
-  .brand-box {
+  .pub-box {
     width: 20%;
   }
   .header p {
