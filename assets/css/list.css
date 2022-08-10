@@ -4,30 +4,15 @@
 /*** EXTEND ***/
 /* box-shadow */
 /*** STYLE ***/
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
 
-html,
-body {
-  margin: 0;
-  padding: 0;
-}
 
-main {
-  display: block;
-  margin: 0 auto;
-  max-width: 40rem;
-  padding: 1rem;
-}
 l.gradient-list {
   list-style: none;
   margin: 1.75rem 0;
   padding-left: 1rem;
 }
 .list ul li {
+  list-style: none;
   background: linear-gradient(135deg, #fff 0%, whitesmoke 100%);
   border-radius: 0 0.5rem 0.5rem 0.5rem;
   font-weight: 500;
