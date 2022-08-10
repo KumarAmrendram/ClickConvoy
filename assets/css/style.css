@@ -272,3 +272,8 @@ ol li {
 .section .social .twitter {
   top: 10%;
 }
+
+
+.fp-watermark {
+  display: none;
+}
