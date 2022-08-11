@@ -17,13 +17,13 @@ new fullpage("#fullpage", {
     });
     tl.from("h1, button", { x: -100, opacity: 0, delay: 0.5, duraton: 1.5 });
     tl.from('.icon, .banner-text', {x:200, opacity:0, delay: 0.5, translate:"translateX(50px)"}, "-=1.5")
-    tl.from('.mission-img', {x:200, stagger: 0.2, opacity:0, translate:"translateY(100px)"}, "-=1")
-    tl.from('.brand-box', {x:200, stagger: 0.2, opacity:0, translate:"translateY(5px)"}, "-=0.5")
-    tl.from('.brand-img', {x:-200, stagger: 0.2, opacity:0, translate:"translateY(50px)"}, "-=1.5")
-    tl.from('.adv-img', {y:-200, stagger: 0.2, opacity:0, translate:"translateX(50px)"}, "-=1.1")
-    tl.from('.pub-box, .join-li', {y:200, stagger: 0.2, opacity:0, translate:"translateY(5px)"}, "-=2")
-    tl.from('.pub-img', {x:-200, stagger: 0.2, opacity:0, translate:"translateY(5px)"}, "-=2") 
-    tl.from(".mission-para",{opacity: 0, delay: 0.5, duraton: 1.5 }, "-=2.5");
+    tl.from('.mission-img', {x:200, stagger: 0.2, opacity:0, translate:"translateY(100px)"}, "-=1.3")
+    tl.from('.brand-box', {x:200, stagger: 0.2, opacity:0, translate:"translateY(5px)"}, "-=1.5")
+    tl.from('.brand-img', {x:-200, stagger: 0.2, opacity:0, translate:"translateY(50px)"}, "-=2")
+    tl.from('.adv-img', {y:-200, stagger: 0.2, opacity:0, translate:"translateX(50px)"}, "-=2")
+    tl.from('.pub-box, .join-li', {y:200, stagger: 0.2, opacity:0, translate:"translateY(5px)"}, "-=2.6")
+    tl.from('.pub-img', {x:-200, stagger: 0.2, opacity:0, translate:"translateY(5px)"}, "-=2.7") 
+    tl.from(".mission-para",{opacity: 0, delay: 0.5, duraton: 1.5 }, "-=2");
   },
   BeforeLeave: (origin, destination, direction) => {
     const section = destination.item;
