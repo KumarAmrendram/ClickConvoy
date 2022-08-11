@@ -65,7 +65,9 @@
 }
 
 @media (max-width: 450px) {
-  .brand-box {
+  .brand-box.offer {
+    margin-left: 70px;
+    width: 250px;
     height: 200px;
   }
 }

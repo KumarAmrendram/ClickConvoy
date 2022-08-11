@@ -67,16 +67,16 @@ a {
   padding: 0.5rem 0 0.5rem 1.5rem;
 }
 .nav_logo,img{
-  /* margin-bottom: 2rem; */
-  width: 180px;
+  width: 35px;
 }
 .nav_logo-icon {
   /* font-size: 1.25rem; */
   /* color: #fff; */
 }
 .nav_logo-name {
-  color: black;
-  font-weight: 700;
+  color: #0073fc;
+  font-size: 1.5rem;
+  font-weight: 800;
 }
 .nav_link {
   position: relative;
@@ -121,14 +121,25 @@ a {
   .l-navbar {
     left: 0;
     padding: 1rem 1rem 0 0;
+  } 
+}
+
+@media (max-width:750){
+  .nav_logo,img{
+    width: 30px !important;
+  }
+  .nav_logo-name {
+    color: #0073fc;
+    font-size: 1rem;
+    font-weight: 100 !important;
   }
 }
 
 .show {
-  width: calc(68px + 156px);
+  width: calc(68px + 211px);
   background-color: #C4DDF2;
 }
 
 .body-pd {
-  padding-left: calc(68px + 188px);
+  padding-left: calc(68px + 215px);
 }
