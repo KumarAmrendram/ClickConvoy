@@ -180,6 +180,13 @@ ol li {
   font-size: 1.5rem;
 }
 
+
+@media (max-width:700) {
+  .offer-container p:nth-child(1) {
+    text-align: center;
+  }
+}
+
 /* misson */
 .mission {
   margin: 0;
