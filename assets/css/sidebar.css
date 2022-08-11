@@ -23,6 +23,7 @@ a {
   color: #fff;
   font-size: 1.5rem;
   cursor: pointer;
+  padding-top: 14px !important;
 }
 .l-navbar {
   position: fixed;
@@ -51,7 +52,7 @@ a {
   padding: 0.5rem 0 0.5rem 1.5rem;
 }
 .nav_logo,img{
-  width: 30px;
+  width: 28px;
 }
 .nav_logo-icon {
   /* font-size: 1.25rem; */
