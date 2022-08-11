@@ -38,8 +38,8 @@
 .brand-box {
   border-radius: 10px;
   box-shadow: 0px 30px 40px -20px var(--grayishBlue);
-  padding: 20px;
-  margin: 20px;
+  padding: 5px !important;
+  margin: 10px;
   background-color: #f8f8f8;
   text-align: left;
 }
@@ -48,11 +48,20 @@
   color: black;
 }
 
-.row1-container .brand-box img {
+.row1-container .brand-box .brand-img {
+  width: 100px;
   float: right;
 }
-.row2-container .brand-box img {
+.row2-container .brand-box .brand-img {
   float: right;
+}
+
+.row2-container .brand-box .offer2-img {
+  width: 100px;
+}
+
+.row1-container .brand-box .sm-head {
+  font-size: 1.8rem !important;
 }
 
 @media (max-width: 450px) {

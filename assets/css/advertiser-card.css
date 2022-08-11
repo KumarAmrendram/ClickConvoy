@@ -31,14 +31,16 @@
 
 .brand-box p {
   color: #000 !important;
-  display: inline;
+  display: inline-block;
 }
 
 .brand-box.adv {
   border-radius: 10px;
   box-shadow: 0px 30px 40px -20px var(--cyan);
+  padding: 20px !important;
+  margin: 10px;
   text-align: left;
-  min-height: 220px !important;
+  min-height: 225px !important;
 }
 
 .card-header h1:first-of-type {
@@ -46,11 +48,17 @@
 }
 
 
-.row1-container .brand-box img {
-  width: 50px;
+.row1-container .brand-box:nth-child(1) {
+
+}
+
+.row1-container .adv img {
+  width: 60px;
   float: right;
 }
-.row2-container .brand-box img {
+
+.row2-container .adv img {
+  width: 60px;
   float: right;
 }
 
@@ -72,11 +80,16 @@
 }
 
 @media (max-width: 450px) {
-  .brand-box.adv {
+  .brand-box {
     min-height: 200px;
   }
   .row1-container .global-reach img {
     float: right;
+  }
+
+  .brand-box p {
+    color: #000 !important;
+    display: inline;
   }
 }
 
@@ -85,7 +98,7 @@
     width: 65px;
   }
 
-  .brand-box.adv {
+  .brand-box {
     min-height: 200px;
   }
   .row1-container .global-reach img {
