@@ -294,5 +294,40 @@ ol li {
 
 
 .fp-watermark {
+  padding: none;
+  margin: 0;
   display: none;
+}
+
+/* footer */
+
+.cp-text{
+
+  position: absolute;
+  font-size: 1rem !important;
+  left: 50% !important;
+  transform: translate(-50%);
+  bottom: 10px !important;
+  color: rgba(0,0,0,.7) !important; 
+}
+
+@media (max-width: 767px) {
+  .cp-text{
+    width: 100%;
+    font-size: 0.9rem  !important;
+    left: 60% !important;
+    transform: translate(-40%);
+    color: rgba(0,0,0,.7) !important; 
+  }
+}
+
+@media (max-width: 590px) {
+  .cp-text{
+    position: absolute;
+    width: 100%;
+    font-size: 0.8rem  !important;
+    left: 60% !important;
+    transform: translate(-50%);
+    color: rgba(0,0,0,.7) !important; 
+  }
 }
