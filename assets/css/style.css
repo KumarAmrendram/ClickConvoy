@@ -136,6 +136,11 @@ ol li {
   height: 100vh;
 }
 
+/* Publisher area */ 
+#publisher {
+  height: fit-content;
+}
+
 /* Join us */
 .join-us {
   position: relative;
